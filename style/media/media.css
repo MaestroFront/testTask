@@ -1,0 +1,123 @@
+@media (max-width: 1300px) {
+  .card__item:nth-child(2) {
+    position: relative;
+    top: 0;
+  }
+  .slider {
+    overflow-x: hidden;
+    width: 600px;
+    border-radius: 10px;
+  }
+  .card__list {
+    flex-wrap: nowrap;
+  }
+  .card__item {
+    min-width: 550px;
+  }
+  .card__item:not(:last-child) {
+    margin-right: 160px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card__item:not(:nth-child(2)) .description::after {
+    left: 0;
+    width: 100%;
+  }
+  .description::before {
+    left: 0%;
+    width: 50%;
+  }
+  .switch {
+    z-index: 1;
+  }
+}
+@media (max-width: 1000px) {
+  .header {
+    position: relative;
+  }
+  .menu__list {
+    position: absolute;
+    flex-direction: column;
+    right: 20%;
+    top: -30%;
+    transform: translateY(-300%);
+    justify-content: center;
+    align-items: center;
+    background-color: #1d252b;
+    padding: 10px 50px;
+    transition: all 2s ease-in-out;
+    z-index: 2;
+    border-radius: 10px;
+  }
+  .menu__item {
+    margin-right: 0px;
+  }
+  .menu__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .menu__item .link {
+    font-size: 24px;
+  }
+  .burger {
+    z-index: 1;
+  }
+}
+@media (max-width: 750px) {
+  .logo-container {
+    margin-right: 30px;
+  }
+  .card__item {
+    min-width: 350px;
+  }
+  .card__item:not(:last-child) {
+    margin-right: 120px;
+  }
+  .wrapper {
+    padding: 15px 20px;
+  }
+  .slider {
+    width: 400px;
+  }
+  .switch {
+    font-size: 14px;
+    top: 16%;
+    height: 20px;
+  }
+  .left {
+    left: 30%;
+  }
+  .right {
+    right: 30%;
+  }
+}
+@media (max-width: 400px) {
+  .switch {
+    font-size: 14px;
+    top: 20%;
+    height: 20px;
+  }
+  .slider {
+    width: 250px;
+  }
+  .card__item {
+    padding: 20px;
+    min-width: 250px;
+  }
+  .card__item:not(:last-child) {
+    margin-right: 45px;
+  }
+  .sign {
+    padding: 10px 15px;
+  }
+  .burger {
+    width: 30px;
+    height: 20px;
+  }
+  .line {
+    height: 2px;
+  }
+}/*# sourceMappingURL=media.css.map */
